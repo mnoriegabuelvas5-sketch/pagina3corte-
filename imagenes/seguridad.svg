@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" role="img" aria-labelledby="title desc">
+  <title id="title">Protección de la información</title>
+  <desc id="desc">Un escudo con candado protege archivos digitales en una computadora.</desc>
+  <defs><linearGradient id="fondo" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e2f4ee"/><stop offset="1" stop-color="#f6faf8"/></linearGradient><linearGradient id="escudo" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0a8a73"/><stop offset="1" stop-color="#55bea0"/></linearGradient></defs>
+  <rect x="12" y="12" width="616" height="416" rx="42" fill="url(#fondo)"/>
+  <circle cx="124" cy="94" r="34" fill="#fff" opacity=".8"/>
+  <rect x="94" y="247" width="226" height="136" rx="15" fill="#203c43"/>
+  <rect x="108" y="261" width="198" height="105" rx="8" fill="#d5f1e7"/>
+  <path d="M123 286h80m-80 20h130m-130 20h100" stroke="#6ab89e" stroke-width="8" stroke-linecap="round"/>
+  <path d="M72 386h270l-17 16H89z" fill="#b9cbc4"/>
+  <path d="M405 93l106 39v82c0 76-43 124-106 157-64-33-107-81-107-157v-82z" fill="url(#escudo)" stroke="#fff" stroke-width="10"/>
+  <path d="M405 129l72 27v59c0 53-27 90-72 118-45-28-73-65-73-118v-59z" fill="#dff6ec" opacity=".95"/>
+  <rect x="366" y="207" width="78" height="65" rx="12" fill="#087f6b"/>
+  <path d="M382 207v-17c0-18 10-29 23-29s23 11 23 29v17" fill="none" stroke="#087f6b" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="405" cy="237" r="7" fill="#fff"/><path d="M405 244v12" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+  <path d="M195 119l7 15 17 2-13 12 4 17-15-9-15 9 3-17-12-12 17-2z" fill="#f0c55e"/>
+  <circle cx="540" cy="317" r="14" fill="#f0c55e"/><circle cx="553" cy="122" r="9" fill="#65b89b"/>
+</svg>

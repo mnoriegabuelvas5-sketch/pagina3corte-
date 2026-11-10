@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" role="img" aria-labelledby="titulo descripcion">
+  <title id="titulo">Descanso visual mirando a lo lejos</title>
+  <desc id="descripcion">Una persona aparta la mirada de la pantalla y observa el paisaje por una ventana durante una pausa.</desc>
+  <defs>
+    <linearGradient id="fondo-pausa" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e4f2f4"/><stop offset="1" stop-color="#f7faf8"/></linearGradient>
+    <linearGradient id="cielo-pausa" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#a9dce4"/><stop offset="1" stop-color="#e7f4e8"/></linearGradient>
+  </defs>
+  <rect x="12" y="12" width="616" height="416" rx="42" fill="url(#fondo-pausa)"/>
+  <rect x="250" y="62" width="306" height="226" rx="18" fill="#fff" stroke="#345663" stroke-width="12"/>
+  <rect x="266" y="78" width="274" height="194" rx="8" fill="url(#cielo-pausa)"/>
+  <circle cx="474" cy="125" r="29" fill="#f2c96c"/>
+  <path d="M266 218l72-74 55 56 44-39 103 85v26H266z" fill="#77b99a"/>
+  <path d="M266 240l74-43 45 30 55-32 100 52v25H266z" fill="#418879"/>
+  <path d="M402 80v192m-136-96h274" stroke="#fff" stroke-width="8" opacity=".8"/>
+  <path d="M44 344h540" stroke="#b9cbc8" stroke-width="12" stroke-linecap="round"/>
+  <path d="M118 323v-72h116v72" fill="#d5e0dc"/>
+  <path d="M106 323h140l-12 17H117z" fill="#9aaca7"/>
+  <circle cx="180" cy="170" r="34" fill="#d88e69"/>
+  <path d="M149 170c0-42 58-53 72-13-18-5-30-13-40-26-5 18-16 30-32 39z" fill="#253f4a"/>
+  <path d="M159 208l-28 39 90 8-20-45z" fill="#edbd88"/>
+  <path d="M148 240c-26 16-38 39-41 72l92 11 31-63-22-21z" fill="#3f8f83"/>
+  <path d="M204 248c33 0 52-17 68-41" fill="none" stroke="#d88e69" stroke-width="15" stroke-linecap="round"/>
+  <path d="M120 325l-9 24m70-22 20 24" stroke="#334c56" stroke-width="12" stroke-linecap="round"/>
+  <path d="M423 326l10 18m37-18-8 18" stroke="#334c56" stroke-width="11" stroke-linecap="round"/>
+  <path d="M458 318h41l-6 28h-30z" fill="#d9aa73"/>
+  <path d="M477 318c-18-18-13-34 2-43 15 13 13 28-2 43m3-15c-1-20 11-30 27-27 0 16-10 27-27 27" fill="#31816f"/>
+</svg>

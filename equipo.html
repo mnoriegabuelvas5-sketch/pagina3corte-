@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cuidado del equipo · Buen uso del computador</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap">
+<style>
+:root{
+  --bg:#f5f5f3; --surface:#ffffff; --ink:#2b2b2a; --muted:#6b6b68; --line:#dcdcd7; --accent:#4a4a47; --soft:#ebebe7;
+  color-scheme:light;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#1d1d1c;--surface:#262625;--ink:#ecece8;--muted:#a3a39e;--line:#3a3a38;--accent:#d2d2cc;--soft:#2e2e2c;color-scheme:dark}
+}
+:root[data-theme="dark"]{--bg:#1d1d1c;--surface:#262625;--ink:#ecece8;--muted:#a3a39e;--line:#3a3a38;--accent:#d2d2cc;--soft:#2e2e2c;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 "Manrope",system-ui,-apple-system,"Segoe UI",sans-serif}
+h1,h2,h3{font-family:"Source Serif 4",Georgia,"Times New Roman",serif;font-weight:600;line-height:1.15;margin:0}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px}
+header.hero{padding:88px 0 72px}
+.hero h1{font-size:clamp(2.4rem,6vw,4.4rem);max-width:15ch;letter-spacing:-.02em}
+.hero p{max-width:52ch;color:var(--muted);margin:24px 0 32px;font-size:1.15rem}
+.btn{display:inline-block;padding:13px 24px;background:var(--ink);color:var(--bg);border-radius:6px;text-decoration:none;font-weight:700}
+.btn:hover{opacity:.88}
+section{padding:64px 0;border-top:1px solid var(--line)}
+.head{display:grid;grid-template-columns:1fr 2fr;gap:40px}
+.head h2{font-size:clamp(1.7rem,3.4vw,2.3rem)}
+.head .lead{color:var(--muted);margin:12px 0 0;font-size:1rem}
+dl{margin:0}
+dl div{padding:18px 0;border-bottom:1px solid var(--line)}
+dl div:first-child{padding-top:0}
+dt{font-weight:700;margin-bottom:4px}
+dd{margin:0;color:var(--muted);max-width:60ch}
+.rule{background:var(--soft);padding:24px 28px;border-radius:10px;margin-top:28px}
+.rule h3{font-size:1.2rem;margin-bottom:8px}
+.rule p{margin:0;color:var(--muted);max-width:60ch}
+.check{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:32px;max-width:720px}
+.check h2{font-size:clamp(1.6rem,3vw,2.1rem);margin-bottom:8px}
+.bar{height:8px;background:var(--soft);border-radius:99px;overflow:hidden;margin:20px 0 6px}
+.bar span{display:block;height:100%;width:0;background:var(--accent);transition:width .25s}
+.count{color:var(--muted);font-size:.9rem;margin:0 0 16px}
+.check label{display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-top:1px solid var(--line);cursor:pointer}
+.check input{width:20px;height:20px;margin-top:3px;accent-color:var(--accent);flex:none}
+.check input:checked+span{color:var(--muted);text-decoration:line-through}
+.msg{margin:18px 0 0;font-weight:700;min-height:1.65em}
+footer{padding:40px 0 56px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+@media (max-width:720px){
+  .head{grid-template-columns:1fr;gap:24px}
+  header.hero{padding:56px 0 48px}
+  section{padding:48px 0}
+  .check{padding:22px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.bar span{transition:none}}
+
+/* Menú */
+.top{border-bottom:1px solid var(--line)}
+.bar-top{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:16px 24px}
+.brand{font-family:"Source Serif 4",Georgia,serif;font-weight:600;font-size:1.15rem;text-decoration:none}
+nav{display:flex;gap:22px;font-size:.95rem}
+nav a{text-decoration:none;color:var(--muted);padding:4px 0;border-bottom:2px solid transparent}
+nav a:hover{color:var(--ink)}
+nav a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--ink)}
+.menu-btn{display:none;background:none;border:1px solid var(--line);color:var(--ink);padding:8px 14px;border-radius:6px;font:inherit;cursor:pointer}
+/* Páginas internas y portada */
+.page-head{padding:72px 0 40px}
+.page-head h1{font-size:clamp(2rem,5vw,3.2rem);max-width:20ch;letter-spacing:-.01em}
+.page-head p{color:var(--muted);max-width:56ch;margin:16px 0 0}
+.sec-title{font-size:clamp(1.7rem,3.4vw,2.3rem);margin-bottom:28px}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.tiles a{display:block;text-decoration:none;border-top:2px solid var(--ink);padding-top:16px}
+.tiles h3{font-size:1.3rem;margin-bottom:8px}
+.tiles p{margin:0;color:var(--muted);font-size:1rem}
+.tiles a:hover h3{text-decoration:underline}
+.next{padding:8px 0 56px;border-top:1px solid var(--line);padding-top:32px}
+.next a{font-weight:700}
+@media (max-width:720px){
+  .menu-btn{display:block}
+  nav{display:none;flex-direction:column;gap:8px;width:100%;padding:8px 0 4px}
+  nav.open{display:flex}
+  .tiles{grid-template-columns:1fr;gap:24px}
+  .page-head{padding:48px 0 32px}
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap bar-top">
+    <a class="brand" href="index.html">Buen uso del computador</a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menú</button>
+    <nav id="menu" aria-label="Principal"><a href="index.html">Inicio</a><a href="postura.html">Postura</a><a href="equipo.html" aria-current="page">Cuidado del equipo</a><a href="seguridad.html">Seguridad</a></nav>
+  </div>
+</header>
+<main class="wrap">
+  <header class="page-head"><h1>Un equipo cuidado dura más</h1><p>Limpieza, ventilación y buen manejo evitan averías y gastos innecesarios.</p></header>
+  <section id="equipo">
+    <div class="head">
+      <div>
+        <h2>Cuidado del equipo</h2>
+        <p class="lead">Pequeños gestos diarios evitan daños costosos.</p>
+      </div>
+      <dl>
+        <div><dt>Lejos de líquidos y comida</dt><dd>Un derrame puede dañar el teclado o la tarjeta principal. Mantén bebidas y alimentos lejos del equipo.</dd></div>
+        <div><dt>Ventilación libre</dt><dd>No bloquees las rejillas de aire. Evita usar el portátil sobre camas o cojines, que atrapan el calor.</dd></div>
+        <div><dt>Limpieza suave</dt><dd>Apaga el equipo y usa un paño seco o apenas húmedo. Nunca rocíes líquido directo sobre la pantalla.</dd></div>
+        <div><dt>Apagado correcto</dt><dd>Cierra tus programas y apaga desde el sistema, no desde el botón con el equipo en uso.</dd></div>
+        <div><dt>Cargador y cables</dt><dd>Usa el cargador original, no tires de los cables y desconéctalos sujetando el conector.</dd></div>
+      </dl>
+    </div>
+  </section>
+  <p class="next"><a href="seguridad.html">Siguiente: seguridad</a></p>
+</main>
+<div class="wrap"><footer>Guía sobre el buen uso del computador.</footer></div>
+<script>
+(function(){
+  // Menú móvil
+  var btn=document.querySelector('.menu-btn'),menu=document.getElementById('menu');
+  if(btn&&menu){
+    btn.addEventListener('click',function(){
+      var open=menu.classList.toggle('open');
+      btn.setAttribute('aria-expanded',open);
+    });
+  }
+  // Lista de revisión (solo en la portada)
+  var boxes=document.querySelectorAll('.check input');
+  if(!boxes.length)return;
+  var fill=document.getElementById('fill'),count=document.getElementById('count'),msg=document.getElementById('msg');
+  var bar=document.querySelector('.bar');
+  function update(){
+    var n=0;boxes.forEach(function(b){if(b.checked)n++;});
+    var t=boxes.length;
+    fill.style.width=(n/t*100)+'%';
+    bar.setAttribute('aria-valuenow',n);
+    count.textContent=n+' de '+t+' hábitos';
+    msg.textContent=n===t?'Muy bien: tu puesto de trabajo está en orden.':(n>=3?'Vas bien. Revisa lo que falta.':'');
+  }
+  boxes.forEach(function(b){b.addEventListener('change',update);});
+})();
+</script>
+</body>
+</html>

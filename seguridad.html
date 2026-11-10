@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Seguridad · Buen uso del computador</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header class="cabecera">
+    <a class="logo" href="index.html">Buen uso del computador</a>
+    <div class="cabecera-acciones">
+      <button class="tema-toggle" type="button" aria-label="Cambiar tema" aria-pressed="false">
+        <span class="tema-toggle-icon" aria-hidden="true">☀️</span>
+        <span class="tema-toggle-text">Claro</span>
+      </button>
+      <button class="menu-boton" type="button" aria-expanded="false" aria-controls="menu">Menú</button>
+    </div>
+    <nav id="menu" class="menu" aria-label="Principal">
+      <a href="index.html">Inicio</a>
+      <a href="cuidado.html">Cuidado del equipo</a>
+      <a href="seguridad.html" class="activo" aria-current="page">Seguridad</a>
+      <a href="ergonomia.html">Ergonomía</a>
+      <a href="galeria.html">Galería</a>
+      <a href="firmas.html">Firmas QR</a>
+    </nav>
+  </header>
+
+  <a class="saltar-contenido" href="#contenido">Saltar al contenido</a>
+  <main class="contenido" id="contenido">
+    <p class="migas"><a href="index.html">Inicio</a> / Seguridad</p>
+
+    <section class="portada">
+      <div class="portada-texto">
+        <h1>Seguridad</h1>
+        <p>Tu computador guarda trabajos, fotos y cuentas. Proteger esa información es tan importante como cuidar el equipo.</p>
+      </div>
+      <figure class="portada-visual">
+        <img src="imagenes/seguridad.svg" alt="Escudo y candado protegen los archivos de un computador">
+      </figure>
+    </section>
+
+    <section class="rejilla" aria-label="Medidas básicas">
+      <article class="bloque">
+        <h3>Contraseñas</h3>
+        <p>Usa claves largas y distintas para cada cuenta. Una frase fácil de recordar es mejor que una palabra corta.</p>
+      </article>
+      <article class="bloque">
+        <h3>Correos y enlaces</h3>
+        <p>Desconfía de mensajes que piden datos urgentes o que prometen premios. Revisa el remitente antes de abrir nada.</p>
+      </article>
+      <article class="bloque">
+        <h3>Copias de respaldo</h3>
+        <p>Guarda una copia de tus archivos importantes en una USB o en la nube, por si el equipo falla.</p>
+      </article>
+    </section>
+
+    <section class="bloque" aria-labelledby="prueba">
+      <h2 id="prueba">Prueba la fortaleza de una contraseña</h2>
+      <p>Escribe una contraseña de ejemplo (no uses una real). No se guarda ni se envía a ningún lado.</p>
+      <label for="clave">Contraseña de ejemplo</label>
+      <input class="campo" id="clave" type="password" autocomplete="off" placeholder="Escribe aquí" aria-describedby="aviso-clave">
+      <p id="aviso-clave" class="ayuda-campo">Usa solo una contraseña inventada. El análisis se hace en esta página y no se guarda.</p>
+      <div class="medidor" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Fortaleza">
+        <div class="medidor-barra" id="medidor"></div>
+      </div>
+      <p id="veredicto" aria-live="polite">Aún no has escrito nada.</p>
+    </section>
+
+    <section class="bloque" aria-labelledby="firma-qr">
+      <h2 id="firma-qr">Firmas digitales y códigos QR</h2>
+      <p>Las firmas digitales validan datos y documentos; cuando se acompañan de un QR, se puede verificar y compartir información con mayor rapidez.</p>
+      <p><a href="firmas.html">Ver la demostración de firmas con QR</a></p>
+    </section>
+
+    <section class="bloque" aria-labelledby="mas">
+      <h2 id="mas">Otros hábitos seguros</h2>
+      <ul>
+        <li>Mantén Windows y tus programas actualizados.</li>
+        <li>Instala software solo desde fuentes oficiales.</li>
+        <li>Usa un antivirus y revisa las memorias USB de otras personas antes de abrirlas.</li>
+        <li>Bloquea la sesión (Windows + L) cuando te levantes del puesto.</li>
+        <li>No compartas tus claves, ni siquiera con amigos.</li>
+      </ul>
+    </section>
+
+    <div class="nota">
+      <strong>Siguiente paso:</strong> cuida también tu cuerpo en la página de <a href="ergonomia.html">Ergonomía</a>.
+    </div>
+
+  </main>
+
+  <footer class="pie">
+    <p>Buen uso del computador · Proyecto de diseño web · <a href="index.html">Volver al inicio</a></p>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

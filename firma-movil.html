@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Firmar desde móvil · Buen uso del computador</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header class="cabecera">
+    <a class="logo" href="index.html">Buen uso del computador</a>
+    <div class="cabecera-acciones">
+      <button class="tema-toggle" type="button" aria-label="Cambiar tema" aria-pressed="false">
+        <span class="tema-toggle-icon" aria-hidden="true">☀️</span>
+        <span class="tema-toggle-text">Claro</span>
+      </button>
+      <button class="menu-boton" type="button" aria-expanded="false" aria-controls="menu">Menú</button>
+    </div>
+    <nav id="menu" class="menu" aria-label="Principal">
+      <a href="index.html">Inicio</a>
+      <a href="cuidado.html">Cuidado del equipo</a>
+      <a href="seguridad.html">Seguridad</a>
+      <a href="ergonomia.html">Ergonomía</a>
+      <a href="galeria.html">Galería</a>
+      <a href="firmas.html">Firmas QR</a>
+    </nav>
+  </header>
+
+  <a class="saltar-contenido" href="#contenido">Saltar al contenido</a>
+  <main class="contenido" id="contenido">
+    <p class="migas"><a href="firmas.html">Firmas QR</a> / Firmar desde móvil</p>
+
+    <section class="bloque" aria-labelledby="firmar">
+      <h1 id="firmar">Firma digital por QR</h1>
+      <p>Abre la hoja en blanco, firma con el dedo o lápiz en tu celular y luego sube la firma para registrarla en la lista de docentes y estudiantes.</p>
+
+      <form id="formulario-firma-movil" class="formulario-firma">
+        <div class="campo-fila">
+          <label for="tipo-firma">Tipo de firmante</label>
+          <select id="tipo-firma" class="campo">
+            <option value="docentes">Docente</option>
+            <option value="estudiantes">Estudiante</option>
+          </select>
+        </div>
+
+        <div class="campo-fila">
+          <label for="nombre-firma">Nombre completo</label>
+          <input id="nombre-firma" class="campo" type="text" placeholder="Ejemplo: María López" required>
+        </div>
+
+        <div class="campo-fila">
+          <label for="documento-firma">Documento o código</label>
+          <input id="documento-firma" class="campo" type="text" placeholder="Ejemplo: 2024-4451" required>
+        </div>
+
+        <div class="campo-fila">
+          <label>Firma</label>
+          <div class="firma-panel">
+            <div class="firma-encabezado">Hoja en blanco para firmar</div>
+            <canvas id="canvas-firma" width="600" height="220" aria-label="Canvas para firmar"></canvas>
+          </div>
+          <div class="controles-firma">
+            <button type="button" class="boton-sec" id="limpiar-firma">Borrar firma</button>
+          </div>
+        </div>
+
+        <button type="submit" class="boton">Subir firma</button>
+      </form>
+
+      <p id="mensaje-firma" class="mensaje-firma" aria-live="polite"></p>
+    </section>
+
+    <section class="bloque" aria-labelledby="firmas-registradas">
+      <h2 id="firmas-registradas">Firmas registradas</h2>
+      <div id="lista-firmas-movil" class="lista-firmas"></div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>Buen uso del computador · Proyecto de diseño web · <a href="firmas.html">Volver a firmas</a></p>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: buen-uso-computador
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: LOGIN_USERNAME
+        value: admin
+      - key: LOGIN_PASSWORD
+        sync: false
+      - key: STUDENT_LOGIN_USERNAME
+        value: estudiante
+      - key: STUDENT_LOGIN_PASSWORD
+        sync: false

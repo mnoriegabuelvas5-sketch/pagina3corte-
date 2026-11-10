@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ergonomía · Buen uso del computador</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header class="cabecera">
+    <a class="logo" href="index.html">Buen uso del computador</a>
+    <div class="cabecera-acciones">
+      <button class="tema-toggle" type="button" aria-label="Cambiar tema" aria-pressed="false">
+        <span class="tema-toggle-icon" aria-hidden="true">☀️</span>
+        <span class="tema-toggle-text">Claro</span>
+      </button>
+      <button class="menu-boton" type="button" aria-expanded="false" aria-controls="menu">Menú</button>
+    </div>
+    <nav id="menu" class="menu" aria-label="Principal">
+      <a href="index.html">Inicio</a>
+      <a href="cuidado.html">Cuidado del equipo</a>
+      <a href="seguridad.html">Seguridad</a>
+      <a href="ergonomia.html" class="activo" aria-current="page">Ergonomía</a>
+      <a href="galeria.html">Galería</a>
+      <a href="firmas.html">Firmas QR</a>
+    </nav>
+  </header>
+
+  <a class="saltar-contenido" href="#contenido">Saltar al contenido</a>
+  <main class="contenido" id="contenido">
+    <p class="migas"><a href="index.html">Inicio</a> / Ergonomía</p>
+
+    <section class="portada">
+      <div class="portada-texto">
+        <h1>Ergonomía</h1>
+        <p>Pasar horas frente al computador sin buena postura causa dolor de espalda, cuello, muñecas y cansancio visual. Pequeños ajustes lo evitan.</p>
+      </div>
+      <figure class="portada-visual">
+        <img src="imagenes/ergonomia.svg" alt="Persona sentada con buena postura frente a un computador">
+      </figure>
+    </section>
+
+    <section class="rejilla" aria-label="Ajustes del puesto de trabajo">
+      <article class="bloque">
+        <h3>Pantalla</h3>
+        <p>El borde superior debe quedar a la altura de tus ojos o un poco más abajo, a un brazo de distancia.</p>
+      </article>
+      <article class="bloque">
+        <h3>Silla y espalda</h3>
+        <p>Apoya toda la espalda en el respaldo, con los pies firmes en el piso y las rodillas en ángulo recto.</p>
+      </article>
+      <article class="bloque">
+        <h3>Manos y muñecas</h3>
+        <p>Mantén las muñecas rectas al escribir y los codos cerca del cuerpo, sin levantar los hombros.</p>
+      </article>
+    </section>
+
+    <section class="bloque" aria-labelledby="regla">
+      <h2 id="regla">Regla 20-20-20 para tus ojos</h2>
+      <p>Cada 20 minutos, mira algo que esté a unos 6 metros (20 pies) durante 20 segundos. Usa el temporizador para practicarlo.</p>
+      <div class="reloj" id="reloj" aria-live="polite">20</div>
+      <div class="controles">
+        <button class="boton" id="iniciar" type="button">Iniciar descanso de 20 segundos</button>
+        <button class="boton-sec" id="reiniciar" type="button">Reiniciar</button>
+      </div>
+      <p id="mensaje-reloj" class="mensaje-reloj">Pulsa el botón y mira hacia un punto lejano.</p>
+      <div class="video-regla">
+        <h3>Video: cómo aplicar la regla 20-20-20</h3>
+        <div class="video-marco">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/mvkoaWkc-fw"
+            title="Regla 20-20-20: cuida tus ojos frente a la pantalla"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <p class="video-alternativa">Si el reproductor no carga, <a href="https://www.youtube.com/watch?v=mvkoaWkc-fw" target="_blank" rel="noopener noreferrer">mira el video directamente en YouTube</a>.</p>
+      </div>
+    </section>
+
+    <section class="bloque" aria-labelledby="pausas">
+      <h2 id="pausas">Pausas activas</h2>
+      <ul>
+        <li>Levántate y camina un par de minutos cada hora.</li>
+        <li>Gira suavemente el cuello y los hombros.</li>
+        <li>Abre y cierra las manos, y estira los dedos y las muñecas.</li>
+        <li>Parpadea con frecuencia; frente a la pantalla parpadeamos menos y los ojos se resecan.</li>
+        <li>Si usas portátil por mucho tiempo, considera un soporte y un teclado externo.</li>
+      </ul>
+    </section>
+
+    <div class="nota">
+      <strong>Recuerda:</strong> ¿Quieres repasar? Vuelve a <a href="cuidado.html">Cuidado del equipo</a> o a la lista de hábitos en el <a href="index.html">inicio</a>.
+    </div>
+
+  </main>
+
+  <footer class="pie">
+    <p>Buen uso del computador · Proyecto de diseño web · <a href="index.html">Volver al inicio</a></p>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+
+</body>
+</html>

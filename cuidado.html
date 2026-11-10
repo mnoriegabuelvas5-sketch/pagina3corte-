@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cuidado del equipo · Buen uso del computador</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header class="cabecera">
+    <a class="logo" href="index.html">Buen uso del computador</a>
+    <div class="cabecera-acciones">
+      <button class="tema-toggle" type="button" aria-label="Cambiar tema" aria-pressed="false">
+        <span class="tema-toggle-icon" aria-hidden="true">☀️</span>
+        <span class="tema-toggle-text">Claro</span>
+      </button>
+      <button class="menu-boton" type="button" aria-expanded="false" aria-controls="menu">Menú</button>
+    </div>
+    <nav id="menu" class="menu" aria-label="Principal">
+      <a href="index.html">Inicio</a>
+      <a href="cuidado.html" class="activo" aria-current="page">Cuidado del equipo</a>
+      <a href="seguridad.html">Seguridad</a>
+      <a href="ergonomia.html">Ergonomía</a>
+      <a href="galeria.html">Galería</a>
+      <a href="firmas.html">Firmas QR</a>
+    </nav>
+  </header>
+
+  <a class="saltar-contenido" href="#contenido">Saltar al contenido</a>
+  <main class="contenido" id="contenido">
+    <p class="migas"><a href="index.html">Inicio</a> / Cuidado del equipo</p>
+
+    <section class="portada">
+      <div class="portada-texto">
+        <h1>Cuidado del equipo</h1>
+        <p>Un computador bien cuidado funciona más rápido, falla menos y dura años. Abre cada tema para ver qué hacer y qué evitar.</p>
+      </div>
+      <figure class="portada-visual">
+        <img src="imagenes/cuidado.svg" alt="Computador limpio con un paño y una planta al lado">
+      </figure>
+    </section>
+
+    <div class="controles">
+      <button class="boton-sec" id="abrir-todo" type="button">Abrir todos</button>
+      <button class="boton-sec" id="cerrar-todo" type="button">Cerrar todos</button>
+    </div>
+
+    <details class="tema" open>
+      <summary>Encender y apagar correctamente</summary>
+      <div class="detalle">
+        <ul>
+          <li>Apaga desde el menú de inicio con la opción <em>Apagar</em>, así se guardan los procesos del sistema.</li>
+          <li>Evita mantener presionado el botón de encendido, salvo que el equipo esté totalmente congelado.</li>
+          <li>Cierra los programas y guarda tus archivos antes de apagar.</li>
+          <li>Si hay una actualización en marcha, espera a que termine.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="tema">
+      <summary>Limpieza</summary>
+      <div class="detalle">
+        <ul>
+          <li>Apaga y desconecta el equipo antes de limpiar.</li>
+          <li>Usa un paño seco y suave para la pantalla; nunca rocíes líquido directamente sobre ella.</li>
+          <li>Para el teclado, voltéalo con suavidad o usa aire comprimido en ráfagas cortas.</li>
+          <li>Las rejillas de ventilación deben mantenerse libres de polvo.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="tema">
+      <summary>Calor y ventilación</summary>
+      <div class="detalle">
+        <p>El calor es el enemigo número uno de los componentes. Cuando el equipo se calienta demasiado se vuelve lento y puede dañarse.</p>
+        <ul>
+          <li>No uses el portátil sobre la cama, cobijas o almohadas; tapan las entradas de aire.</li>
+          <li>Colócalo sobre una superficie dura y plana.</li>
+          <li>Evita dejarlo al sol o dentro de un carro cerrado.</li>
+          <li>Si el ventilador suena muy fuerte todo el tiempo, puede ser señal de polvo acumulado.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="tema">
+      <summary>Batería y cargador</summary>
+      <div class="detalle">
+        <ul>
+          <li>Usa el cargador original o uno compatible de buena calidad.</li>
+          <li>No lo dejes descargarse hasta 0% con frecuencia.</li>
+          <li>Desconecta el cargador sin halar del cable; sujeta el conector.</li>
+          <li>Guarda el cable sin doblarlo ni enrollarlo con fuerza.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="tema">
+      <summary>Líquidos, comida y golpes</summary>
+      <div class="detalle">
+        <ul>
+          <li>Mantén bebidas y comida lejos del teclado; un solo derrame puede dañar la placa.</li>
+          <li>Transporta el portátil en una funda o maleta acolchada.</li>
+          <li>No pongas objetos pesados encima, ni con el equipo cerrado.</li>
+          <li>Si se moja: apágalo de inmediato, desconéctalo y llévalo a revisión; no lo enciendas para probar.</li>
+        </ul>
+      </div>
+    </details>
+
+    <section class="bloque" aria-labelledby="resumen">
+      <h2 id="resumen">Resumen rápido</h2>
+      <div class="tabla-scroll">
+        <table class="tabla">
+          <thead><tr><th>Haz esto</th><th>Evita esto</th></tr></thead>
+          <tbody>
+            <tr><td>Apagar desde el sistema</td><td>Cortar la energía de golpe</td></tr>
+            <tr><td>Limpiar con paño seco</td><td>Usar agua o limpiadores fuertes</td></tr>
+            <tr><td>Usar superficies duras y planas</td><td>Cobijas, almohadas o la cama</td></tr>
+            <tr><td>Cargar con el cargador correcto</td><td>Cargadores genéricos de dudosa calidad</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <div class="nota">
+      <strong>Siguiente paso:</strong> aprende a proteger tu información en la página de <a href="seguridad.html">Seguridad</a>.
+    </div>
+
+  </main>
+
+  <footer class="pie">
+    <p>Buen uso del computador · Proyecto de diseño web · <a href="index.html">Volver al inicio</a></p>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

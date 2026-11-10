@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Firmas digitales y QR · Buen uso del computador</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header class="cabecera">
+    <a class="logo" href="index.html">Buen uso del computador</a>
+    <div class="cabecera-acciones">
+      <button class="tema-toggle" type="button" aria-label="Cambiar tema" aria-pressed="false">
+        <span class="tema-toggle-icon" aria-hidden="true">☀️</span>
+        <span class="tema-toggle-text">Claro</span>
+      </button>
+      <button class="menu-boton" type="button" aria-expanded="false" aria-controls="menu">Menú</button>
+    </div>
+    <nav id="menu" class="menu" aria-label="Principal">
+      <a href="index.html">Inicio</a>
+      <a href="cuidado.html">Cuidado del equipo</a>
+      <a href="seguridad.html">Seguridad</a>
+      <a href="ergonomia.html">Ergonomía</a>
+      <a href="galeria.html">Galería</a>
+      <a href="firmas.html" class="activo" aria-current="page">Firmas QR</a>
+    </nav>
+  </header>
+
+  <a class="saltar-contenido" href="#contenido">Saltar al contenido</a>
+  <main class="contenido" id="contenido">
+    <p class="migas"><a href="index.html">Inicio</a> / Firmas digitales y QR</p>
+
+    <section class="portada">
+      <div class="portada-texto">
+        <h1>Firmas digitales y códigos QR</h1>
+        <p>Las firmas digitales y los códigos QR permiten verificar información con rapidez, reforzar la seguridad y facilitar la validación de documentos, permisos o entregas en entornos escolares y profesionales.</p>
+      </div>
+      <figure class="portada-visual">
+        <img src="imagenes/seguridad.svg" alt="Escudo y código QR representando seguridad digital">
+      </figure>
+    </section>
+
+    <section class="bloque" aria-labelledby="concepto">
+      <h2 id="concepto">¿Qué es una firma digital?</h2>
+      <p>Una firma digital no es un dibujo ni una simple validación visual. Es una técnica que ayuda a comprobar que un archivo o documento fue emitido por una persona o entidad y que no ha sido alterado desde su origen.</p>
+      <p>Cuando se combina con un código QR, la verificación se vuelve más rápida: el usuario escanea el código y puede acceder a datos verificables, identificadores, permisos o enlaces de validación.</p>
+    </section>
+
+    <section class="bloque" aria-labelledby="uso">
+      <h2 id="uso">Usos comunes</h2>
+      <ul>
+        <li>Validar documentos entregados por estudiantes o trabajadores.</li>
+        <li>Confirmar asistencia o autenticación en eventos.</li>
+        <li>Acceder a certificados o comprobantes sin escribir largas direcciones.</li>
+        <li>Representar la identidad de una persona o cargo en documentos internos.</li>
+      </ul>
+    </section>
+
+    <section class="bloque" aria-labelledby="demo-qr">
+      <h2 id="demo-qr">QR para firmar desde el celular</h2>
+      <p>Escanea cualquiera de los códigos y abre la página de firma desde tu móvil para registrar la firma de un docente o estudiante.</p>
+
+      <div class="qr-atajo">
+        <p>Si no aparece el QR o quieres abrirlo directamente:</p>
+        <div class="controles">
+          <a class="boton" href="http://192.168.1.57:8000/firma-movil.html?tipo=docentes" target="_blank" rel="noopener">Abrir firma docente</a>
+          <a class="boton-sec" href="http://192.168.1.57:8000/firma-movil.html?tipo=estudiantes" target="_blank" rel="noopener">Abrir firma estudiante</a>
+        </div>
+        <small>Usa la misma red Wi‑Fi y, si se pide, inicia sesión con el usuario admin y la contraseña Password123.</small>
+      </div>
+
+      <div class="qr-grid">
+        <div class="qr-card">
+          <img class="qr-imagen" data-qr="docentes" alt="Código QR para firmar como docente" />
+          <p>Firmas de docentes</p>
+        </div>
+        <div class="qr-card">
+          <img class="qr-imagen" data-qr="estudiantes" alt="Código QR para firmar como estudiante" />
+          <p>Firmas de estudiantes</p>
+        </div>
+      </div>
+      <p class="qr-estado" id="qr-estado" role="status" aria-live="polite">Preparando códigos QR…</p>
+      <div class="qr-configuracion">
+        <label for="qr-direccion">Dirección de red del sitio</label>
+        <p>Dirección configurada: <strong>http://192.168.1.57:8000</strong>. El celular debe estar en la misma red y el servidor debe aceptar conexiones externas.</p>
+        <div class="qr-configuracion-fila">
+          <input id="qr-direccion" class="campo" type="url" inputmode="url" placeholder="http://192.168.1.57:8000" value="http://192.168.1.57:8000" aria-describedby="qr-ayuda">
+          <button id="actualizar-qr" class="boton" type="button">Actualizar códigos QR</button>
+        </div>
+        <small id="qr-ayuda">Si los QR no abren el sitio, comprueba la IP y el puerto del servidor. Si Windows pregunta, permite el acceso de Python a redes privadas.</small>
+      </div>
+    </section>
+
+    <section class="bloque" aria-labelledby="firmas-guardadas">
+      <h2 id="firmas-guardadas">Firmas registradas</h2>
+      <div id="lista-firmas" class="lista-firmas"></div>
+    </section>
+
+    <section class="bloque" aria-labelledby="recomendaciones">
+      <h2 id="recomendaciones">Recomendaciones importantes</h2>
+      <ul>
+        <li>El código QR debe contener información útil y verificada, no datos sensibles sin protección.</li>
+        <li>Siempre conviene mostrar además un texto legible para la persona que lo escanea.</li>
+        <li>La firma digital real se apoya en sistemas de autenticación y criptografía, no solo en un código QR.</li>
+        <li>En una institución, el QR debe servir como acceso rápido a la validación, no como reemplazo total de la identidad.</li>
+      </ul>
+    </section>
+
+    <div class="nota">
+      <strong>Importante:</strong> el ejemplo que ves aquí es una simulación educativa para comprender la idea. En la práctica real, estas firmas requieren sistemas de validación seguros y certificados digitales.
+    </div>
+
+  </main>
+
+  <footer class="pie">
+    <p>Buen uso del computador · Proyecto de diseño web · <a href="index.html">Volver al inicio</a></p>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

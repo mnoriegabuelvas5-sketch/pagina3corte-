@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" role="img" aria-labelledby="titulo descripcion">
+  <title id="titulo">Espacio de trabajo ordenado</title>
+  <desc id="descripcion">Un computador portátil sobre un escritorio despejado con cables organizados, una lámpara y una planta lejos del equipo.</desc>
+  <defs>
+    <linearGradient id="fondo-orden" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e6eef7"/><stop offset="1" stop-color="#f8fafc"/></linearGradient>
+    <linearGradient id="pantalla-orden" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1f5872"/><stop offset="1" stop-color="#54a9aa"/></linearGradient>
+  </defs>
+  <rect x="12" y="12" width="616" height="416" rx="42" fill="url(#fondo-orden)"/>
+  <circle cx="520" cy="92" r="38" fill="#fff" opacity=".8"/>
+  <path d="M74 344h492" stroke="#b9c9d6" stroke-width="12" stroke-linecap="round"/>
+  <path d="M121 344v50m398-50v50" stroke="#708b9b" stroke-width="15" stroke-linecap="round"/>
+  <rect x="206" y="116" width="252" height="174" rx="17" fill="#244757"/>
+  <rect x="220" y="130" width="224" height="144" rx="9" fill="url(#pantalla-orden)"/>
+  <path d="M242 238c32-42 59 12 91-25 34-40 68-31 94 0v51H242z" fill="#bde8d8" opacity=".9"/>
+  <circle cx="328" cy="179" r="20" fill="#f2cf79"/>
+  <path d="M182 291h300l27 30c5 6 0 14-9 14H163c-9 0-13-8-8-14z" fill="#d4dfe5"/>
+  <path d="M272 304h120" stroke="#9db0bb" stroke-width="7" stroke-linecap="round"/>
+  <path d="M475 334c0 25-18 25-18 49h57c0-24-18-24-18-49" fill="none" stroke="#56788a" stroke-width="8" stroke-linecap="round"/>
+  <path d="M105 326v-54h50v54" fill="#e6b778"/>
+  <path d="M130 273v-54m0 29c-25-3-31-22-28-36 23 0 36 13 28 36m2 14c24-5 30-23 27-37-22 1-35 14-27 37" fill="#31816f" stroke="#31816f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M94 326h72l-8 19h-56z" fill="#c98d5d"/>
+  <path d="M517 189l-49 61m-5-89 66 8m-49-33 33 73" fill="none" stroke="#657f8e" stroke-width="9" stroke-linecap="round"/>
+  <path d="M458 166l32-36 26 10-13 25 29 28-12 12-36-25-16 17z" fill="#e7b967"/>
+  <circle cx="263" cy="76" r="8" fill="#5a9a91"/><circle cx="289" cy="76" r="8" fill="#5a9a91"/><circle cx="315" cy="76" r="8" fill="#5a9a91"/>
+</svg>

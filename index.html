@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buen uso del computador</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header class="cabecera">
+    <a class="logo" href="index.html">Buen uso del computador</a>
+    <div class="cabecera-acciones">
+      <button class="tema-toggle" type="button" aria-label="Cambiar tema" aria-pressed="false">
+        <span class="tema-toggle-icon" aria-hidden="true">☀️</span>
+        <span class="tema-toggle-text">Claro</span>
+      </button>
+      <button class="menu-boton" type="button" aria-expanded="false" aria-controls="menu">Menú</button>
+    </div>
+    <nav id="menu" class="menu" aria-label="Principal">
+      <a href="index.html" class="activo" aria-current="page">Inicio</a>
+      <a href="cuidado.html">Cuidado del equipo</a>
+      <a href="seguridad.html">Seguridad</a>
+      <a href="ergonomia.html">Ergonomía</a>
+      <a href="galeria.html">Galería</a>
+      <a href="firmas.html">Firmas QR</a>
+    </nav>
+  </header>
+
+  <a class="saltar-contenido" href="#contenido">Saltar al contenido</a>
+  <main class="contenido" id="contenido">
+
+    <section class="portada">
+      <div class="portada-texto">
+        <h1>Un computador dura más cuando se usa bien</h1>
+        <p>Esta página reúne lo básico para cuidar tu equipo, proteger tu información y trabajar sin hacerle daño a tu cuerpo.</p>
+        <a class="boton" href="cuidado.html">Empezar por el cuidado del equipo</a>
+      </div>
+      <figure class="portada-visual">
+        <img src="imagenes/inicio.svg" alt="Computador portátil sobre un escritorio ordenado con una planta">
+      </figure>
+    </section>
+
+    <section class="destacados" aria-labelledby="destacados">
+      <h2 id="destacados">Lo más importante</h2>
+      <div class="mini-grid">
+        <article class="mini-card">
+          <span class="badge">1</span>
+          <h3>Cuida el aire</h3>
+          <p>Evita bloquear ventilaciones y guarda el equipo en un lugar con buena circulación.</p>
+        </article>
+        <article class="mini-card">
+          <span class="badge">2</span>
+          <h3>Protege tus datos</h3>
+          <p>Usa contraseñas distintas y guarda copias importantes en otro lugar.</p>
+        </article>
+        <article class="mini-card">
+          <span class="badge">3</span>
+          <h3>Cuida tu cuerpo</h3>
+          <p>Mejora la postura, toma pausas y mira lejos durante unos segundos.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="bloque" aria-labelledby="consejos-dia">
+      <h2 id="consejos-dia">Consejo del día</h2>
+      <p id="consejo-del-dia">Cargando recomendación...</p>
+    </section>
+
+    <section class="bloque" aria-labelledby="mini-evaluacion">
+      <h2 id="mini-evaluacion">Mini evaluación de hábitos</h2>
+      <p>Marca las buenas prácticas que ya realizas y descubre tu nivel.</p>
+
+      <form id="test-habitos-form" class="test-habitos-form">
+        <label class="test-option"><input type="checkbox" name="habito"> Mantengo la pantalla a la altura de los ojos.</label>
+        <label class="test-option"><input type="checkbox" name="habito"> Toma pausas cada 20–30 minutos.</label>
+        <label class="test-option"><input type="checkbox" name="habito"> No bloquea las ventilaciones del equipo.</label>
+        <label class="test-option"><input type="checkbox" name="habito"> Usa contraseñas distintas para cuentas importantes.</label>
+
+        <div class="controles">
+          <button type="button" class="boton-sec" id="evaluar-habitos">Evaluar mi nivel</button>
+        </div>
+      </form>
+
+      <p id="resultado-habitos" aria-live="polite">Todavía no has evaluado tus hábitos.</p>
+    </section>
+
+    <section class="bloque" aria-labelledby="temporizador-titulo">
+      <h2 id="temporizador-titulo">Temporizador de pausas</h2>
+      <p>Usa el reloj recomendado según tu perfil para trabajar con descansos más sostenibles.</p>
+
+      <div class="temporizador-grid">
+        <article class="temporizador-card" data-seconds="1500">
+          <h3>Alumnos</h3>
+          <p>Ritmo recomendado: 25 minutos de trabajo.</p>
+          <div class="temporizador-display" aria-live="polite">25:00</div>
+          <div class="temporizador-controles">
+            <button class="boton" type="button" data-role="start">Iniciar</button>
+            <button class="boton-sec" type="button" data-role="reset">Reiniciar</button>
+          </div>
+        </article>
+
+        <article class="temporizador-card" data-seconds="2700">
+          <h3>Docentes</h3>
+          <p>Ritmo recomendado: 45 minutos de atención.</p>
+          <div class="temporizador-display" aria-live="polite">45:00</div>
+          <div class="temporizador-controles">
+            <button class="boton" type="button" data-role="start">Iniciar</button>
+            <button class="boton-sec" type="button" data-role="reset">Reiniciar</button>
+          </div>
+        </article>
+      </div>
+
+      <div class="tiempo-linea" aria-live="polite">
+        <span class="tiempo-linea-label">Tiempo en línea</span>
+        <strong id="tiempo-en-linea">00:00:00</strong>
+      </div>
+    </section>
+
+    <section aria-labelledby="temas">
+      <h2 id="temas">¿Qué vas a encontrar?</h2>
+      <div class="rejilla">
+        <article class="bloque">
+          <h3>Cuidado del equipo</h3>
+          <p>Limpieza, ventilación, batería y la forma correcta de encender y apagar el computador.</p>
+          <a href="cuidado.html">Ver cuidado del equipo</a>
+        </article>
+        <article class="bloque">
+          <h3>Seguridad</h3>
+          <p>Contraseñas, correos engañosos, antivirus y copias de respaldo de tus archivos.</p>
+          <a href="seguridad.html">Ver seguridad</a>
+        </article>
+        <article class="bloque">
+          <h3>Ergonomía</h3>
+          <p>Postura, altura de la pantalla y pausas para evitar dolor de espalda, cuello y ojos.</p>
+          <a href="ergonomia.html">Ver ergonomía</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="bloque" aria-labelledby="revisa">
+      <h2 id="revisa">Revisa tus hábitos</h2>
+      <p>Marca los que ya cumples. Al final verás cuántos te faltan.</p>
+
+      <ul class="habitos">
+        <li><label><input type="checkbox"><span>Apago el computador desde el menú de Windows, no con el botón.</span></label></li>
+        <li><label><input type="checkbox"><span>No como ni bebo cerca del teclado.</span></label></li>
+        <li><label><input type="checkbox"><span>Uso contraseñas distintas para mis cuentas importantes.</span></label></li>
+        <li><label><input type="checkbox"><span>Guardo copia de mis trabajos en otro lugar (USB o nube).</span></label></li>
+        <li><label><input type="checkbox"><span>Descanso la vista unos segundos cada 20 minutos.</span></label></li>
+        <li><label><input type="checkbox"><span>Mantengo la espalda apoyada y la pantalla a la altura de los ojos.</span></label></li>
+      </ul>
+
+      <div class="progreso" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Hábitos cumplidos">
+        <div class="progreso-barra" id="barra"></div>
+      </div>
+      <p id="resultado" aria-live="polite">Has marcado 0 de 6 hábitos.</p>
+    </section>
+
+    <div class="nota">
+      <strong>Dato útil:</strong> la mayoría de los daños en un computador no vienen de un golpe fuerte, sino de pequeños descuidos repetidos: polvo, calor y apagados bruscos.
+    </div>
+
+  </main>
+
+  <footer class="pie">
+    <p>Buen uso del computador · Proyecto de diseño web</p>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

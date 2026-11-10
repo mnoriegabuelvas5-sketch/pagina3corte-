@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Galería de imágenes sobre ergonomía, seguridad, cuidado y buenos hábitos al usar el computador.">
+  <title>Galería · Buen uso del computador</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="cabecera">
+    <a class="logo" href="index.html">Buen uso del computador</a>
+    <div class="cabecera-acciones">
+      <button class="tema-toggle" type="button" aria-label="Cambiar tema" aria-pressed="false">
+        <span class="tema-toggle-icon" aria-hidden="true">☀️</span>
+        <span class="tema-toggle-text">Claro</span>
+      </button>
+      <button class="menu-boton" type="button" aria-expanded="false" aria-controls="menu">Menú</button>
+    </div>
+    <nav id="menu" class="menu" aria-label="Principal">
+      <a href="index.html">Inicio</a>
+      <a href="cuidado.html">Cuidado del equipo</a>
+      <a href="seguridad.html">Seguridad</a>
+      <a href="ergonomia.html">Ergonomía</a>
+      <a href="galeria.html" class="activo" aria-current="page">Galería</a>
+      <a href="firmas.html">Firmas QR</a>
+    </nav>
+  </header>
+
+  <a class="saltar-contenido" href="#contenido">Saltar al contenido</a>
+  <main class="contenido" id="contenido">
+    <p class="migas"><a href="index.html">Inicio</a> / Galería</p>
+
+    <section class="portada galeria-portada">
+      <div class="portada-texto">
+        <h1>Galería del buen uso del computador</h1>
+        <p>Imágenes e ideas para cuidar el equipo, proteger la información, mantener una postura cómoda y hacer pausas saludables.</p>
+      </div>
+      <figure class="portada-visual">
+        <img src="imagenes/espacio-ordenado.svg" alt="Escritorio ordenado con computador portátil y cables organizados">
+      </figure>
+    </section>
+
+    <section aria-label="Imágenes de buenos hábitos con el computador">
+      <div class="galeria-grid">
+        <article class="galeria-tarjeta">
+          <img src="imagenes/ergonomia.svg" alt="Persona sentada con buena postura frente a un computador" loading="lazy">
+          <div class="galeria-texto">
+            <span class="galeria-etiqueta">Ergonomía</span>
+            <h2>Una postura cómoda</h2>
+            <p>Ajusta la pantalla, apoya la espalda y mantén los pies firmes en el piso.</p>
+            <a href="ergonomia.html">Ver recomendaciones</a>
+          </div>
+        </article>
+
+        <article class="galeria-tarjeta">
+          <img src="imagenes/pausa-visual.svg" alt="Persona descansando la vista mientras mira el paisaje por una ventana" loading="lazy">
+          <div class="galeria-texto">
+            <span class="galeria-etiqueta">Salud visual</span>
+            <h2>Pausas para los ojos</h2>
+            <p>Cada 20 minutos, mira algo a unos 6 metros durante 20 segundos.</p>
+            <a href="ergonomia.html#regla">Conocer la regla 20-20-20</a>
+          </div>
+        </article>
+
+        <article class="galeria-tarjeta">
+          <img src="imagenes/cuidado.svg" alt="Computador limpio junto a un paño y una planta" loading="lazy">
+          <div class="galeria-texto">
+            <span class="galeria-etiqueta">Cuidado del equipo</span>
+            <h2>Limpieza cuidadosa</h2>
+            <p>Apaga y desconecta el equipo antes de limpiarlo con un paño suave y seco.</p>
+            <a href="cuidado.html">Ver cuidados del equipo</a>
+          </div>
+        </article>
+
+        <article class="galeria-tarjeta">
+          <img src="imagenes/seguridad.svg" alt="Escudo y candado protegen la información de un computador" loading="lazy">
+          <div class="galeria-texto">
+            <span class="galeria-etiqueta">Seguridad digital</span>
+            <h2>Protege tu información</h2>
+            <p>Usa contraseñas seguras, actualiza tus dispositivos y revisa los enlaces.</p>
+            <a href="seguridad.html">Aprender sobre seguridad</a>
+          </div>
+        </article>
+
+        <article class="galeria-tarjeta">
+          <img src="imagenes/espacio-ordenado.svg" alt="Escritorio despejado con computador y cables organizados" loading="lazy">
+          <div class="galeria-texto">
+            <span class="galeria-etiqueta">Organización</span>
+            <h2>Un espacio ordenado</h2>
+            <p>Deja libre la zona de trabajo y organiza los cables para evitar tropiezos.</p>
+            <a href="cuidado.html">Más consejos para el equipo</a>
+          </div>
+        </article>
+
+        <article class="galeria-tarjeta">
+          <img src="imagenes/inicio.svg" alt="Computador portátil listo para trabajar en un escritorio organizado" loading="lazy">
+          <div class="galeria-texto">
+            <span class="galeria-etiqueta">Buenos hábitos</span>
+            <h2>Usa el computador con cuidado</h2>
+            <p>Combina hábitos saludables para cuidar tu equipo y trabajar mejor.</p>
+            <a href="index.html">Volver al inicio</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div class="nota">
+      <strong>Recuerda:</strong> las imágenes resumen buenas prácticas; visita las secciones para conocer más detalles.
+    </div>
+  </main>
+
+  <footer class="pie">
+    <p>Buen uso del computador · Proyecto de diseño web · <a href="index.html">Volver al inicio</a></p>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

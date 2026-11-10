@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" role="img" aria-labelledby="title desc">
+  <title id="title">Puesto de trabajo ergonómico</title>
+  <desc id="desc">Persona sentada con buena postura frente a un computador, con una planta al lado.</desc>
+  <defs><linearGradient id="fondo" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e2f4ee"/><stop offset="1" stop-color="#f8fbf9"/></linearGradient></defs>
+  <rect x="12" y="12" width="616" height="416" rx="42" fill="url(#fondo)"/>
+  <circle cx="493" cy="95" r="39" fill="#fff" opacity=".8"/>
+  <path d="M74 356h490" stroke="#b6d6c9" stroke-width="10" stroke-linecap="round"/>
+  <rect x="379" y="116" width="164" height="116" rx="13" fill="#234148"/>
+  <rect x="390" y="127" width="142" height="93" rx="7" fill="#a8dfca"/>
+  <path d="M460 232v65m-42 0h84" stroke="#839b93" stroke-width="10" stroke-linecap="round"/>
+  <path d="M165 240h114v92H165z" fill="#eead72"/>
+  <circle cx="222" cy="178" r="35" fill="#d98c62"/>
+  <path d="M189 175c2-42 68-50 73 4-18-2-34-12-43-25-5 12-15 19-30 21z" fill="#263e45"/>
+  <path d="M199 208l-21 31h91l-19-31z" fill="#f0bd83"/>
+  <path d="M185 249c-24 17-39 40-40 69l70 13 40-51-18-31z" fill="#18856e"/>
+  <path d="M240 253c37 0 59 15 77 39l62-3" fill="none" stroke="#d98c62" stroke-width="16" stroke-linecap="round"/>
+  <path d="M203 324l-10 33m56-32 31 31" stroke="#354e54" stroke-width="13" stroke-linecap="round"/>
+  <path d="M178 356h-32m133 0h38" stroke="#354e54" stroke-width="10" stroke-linecap="round"/>
+  <path d="M97 293c0-23 18-40 41-38v81H97z" fill="#7ac6a7"/>
+  <path d="M113 295c-16-2-25-13-24-29 15 0 24 9 24 29m2-8c0-18 11-29 26-29 1 16-8 27-26 29" fill="#087f6b"/>
+  <path d="M106 336h45l-6 24h-33z" fill="#e9a86f"/>
+  <path d="M303 119v27m-13-13h26" stroke="#f0c55e" stroke-width="7" stroke-linecap="round"/>
+</svg>

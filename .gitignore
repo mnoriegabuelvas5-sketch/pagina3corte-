@@ -1,0 +1,13 @@
+# Python environments and generated files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+_respaldo_antes_de_actualizar/
+sitio_final.zip
+
+# Local secrets
+.env
+.env.*
+!.env.example
