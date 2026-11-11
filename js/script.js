@@ -19,7 +19,9 @@
   var mensaje = document.createElement('p');
   var saludo = document.createElement('strong');
   var destino = document.createElement('span');
-  saludo.textContent = '¡Bienvenido!';
+  saludo.textContent = pagina === 'cuidado.html'
+    ? '¡Bienvenido a La Patria Milagro!'
+    : '¡Bienvenido!';
   destino.textContent = ' Estás en: ' + seccion;
   mensaje.appendChild(saludo);
   mensaje.appendChild(destino);
