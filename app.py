@@ -32,6 +32,12 @@ def inicio():
     return redirect("/index.html")
 
 
+@app.route("/login", defaults={"tipo": None}, methods=["GET", "POST"])
+@app.route("/login/<tipo>", methods=["GET", "POST"])
+def login_eliminado(tipo):
+    return redirect("/index.html")
+
+
 @app.get("/<path:archivo>")
 def servir_archivo(archivo):
     partes = Path(archivo).parts

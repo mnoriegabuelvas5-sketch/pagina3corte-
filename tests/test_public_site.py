@@ -17,6 +17,6 @@ def test_home_and_pages_are_public():
 def test_login_routes_are_removed():
     client = app_module.app.test_client()
 
-    assert client.get("/login").status_code == 404
-    assert client.get("/login/estudiante").status_code == 404
-    assert client.get("/login/docente").status_code == 404
+    for path in ("/login", "/login/estudiante", "/login/docente"):
+        assert client.get(path).status_code == 302
+        assert client.post(path).status_code == 302
