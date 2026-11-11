@@ -166,20 +166,6 @@ body[data-theme="dark"] .cabecera {
 .menu-boton:hover, .tema-toggle:hover {
   border-color: var(--acento);
 }
-.cerrar-sesion-form { margin: 0; }
-.cerrar-sesion {
-  padding: .5rem .85rem;
-  border: 1px solid var(--borde);
-  border-radius: 999px;
-  background: var(--superficie);
-  color: var(--texto);
-  font-weight: 700;
-  cursor: pointer;
-}
-.cerrar-sesion:hover {
-  border-color: var(--acento);
-  background: var(--acento-claro);
-}
 .tema-toggle {
   display: inline-flex;
   font-weight: 700;

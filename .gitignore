@@ -6,6 +6,7 @@ __pycache__/
 .pytest_cache/
 _respaldo_antes_de_actualizar/
 sitio_final.zip
+contrase34/
 
 # Local secrets
 .env

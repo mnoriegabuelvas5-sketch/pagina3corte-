@@ -19,58 +19,13 @@
   var mensaje = document.createElement('p');
   var saludo = document.createElement('strong');
   var destino = document.createElement('span');
-  saludo.textContent = '¡Bienvenido Manuel Noriega!';
+  saludo.textContent = '¡Bienvenido!';
   destino.textContent = ' Estás en: ' + seccion;
   mensaje.appendChild(saludo);
   mensaje.appendChild(destino);
   bienvenida.appendChild(mensaje);
   encabezado.insertAdjacentElement('afterend', bienvenida);
 
-  fetch('/auth/status', { credentials: 'same-origin', cache: 'no-store' })
-    .then(function (respuesta) {
-      if (!respuesta.ok) return null;
-      return respuesta.json();
-    })
-    .then(function (estado) {
-      if (estado && estado.autenticado && estado.bienvenida) {
-        saludo.textContent = estado.bienvenida;
-      }
-    })
-    .catch(function () {});
-})();
-
-// Añade el cierre de sesión solo cuando el servidor confirma una sesión activa.
-(function configurarCerrarSesion() {
-  var acciones = document.querySelector('.cabecera-acciones');
-  if (!acciones) return;
-
-  fetch('/auth/status', { credentials: 'same-origin', cache: 'no-store' })
-    .then(function (respuesta) {
-      if (!respuesta.ok) return null;
-      return respuesta.json();
-    })
-    .then(function (estado) {
-      if (!estado || !estado.autenticado || !estado.csrf_token) return;
-
-      var formulario = document.createElement('form');
-      formulario.className = 'cerrar-sesion-form';
-      formulario.method = 'post';
-      formulario.action = '/logout';
-
-      var token = document.createElement('input');
-      token.type = 'hidden';
-      token.name = 'csrf_token';
-      token.value = estado.csrf_token;
-
-      var boton = document.createElement('button');
-      boton.type = 'submit';
-      boton.className = 'cerrar-sesion';
-      boton.textContent = 'Cerrar sesión';
-      formulario.appendChild(token);
-      formulario.appendChild(boton);
-      acciones.appendChild(formulario);
-    })
-    .catch(function () {});
 })();
 
 // Tiempo en línea y temporizador para estudiantes y docentes.
